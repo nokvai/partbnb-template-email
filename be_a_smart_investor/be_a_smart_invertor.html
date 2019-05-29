@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
     <style type="text/css">
+        @font-face {
+            font-family: 'ArialMT';
+            src: url(ArialMT.woff);
+        }  
+        @font-face {
+            font-family: 'ArialBoldMT';
+            src: url(Arial-BoldMT.woff);
+        }  
+
+        
         .main-container {
             max-width: 600px;
             margin: auto;
             background: #ffffff;
         }
-        
         .header {
             height: 57px;
             background-color: red;
@@ -25,7 +34,7 @@
             margin-left: 39px;
         }
         .header p { 
-            font-family: 'ArialMT';
+            font-family: ArialMT;
             color:#BCBCBC;
             font-size: 8px;
             line-height: 9px;
@@ -33,7 +42,7 @@
         }
         .header p > a {
             color: #2C2C2C;
-            font-family: 'ArialMT';
+            font-family: ArialMT;
             font-size: 8px;
             line-height: 9px;
             margin-left: auto;
@@ -45,16 +54,40 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
-            position: relative;
+            height: 390px;
+        }
+        .be-a-smart-investor h1 {
+            font-family: ArialBoldMT;
+            font-size: 25px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 30px;
+            margin-top: 0;
+            padding-top: 58px;
+        }
+
+        .be-a-smart-investor p {
+            font-family: ArialMT;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-top: 0;
+            margin-left: 95px;
+            margin-right: 95px;
         }
     </style>
   </head>
   <body>
     <div class="main-container">
-        <div class="header">
+        <section class="header">
             <img src="PartbnbLogoRGB.png" />
             <p>Having trouble viewing?&nbsp;&nbsp;<a href="">View in Browser</a></p>
-        </div>
+        </section>
+        <section class="be-a-smart-investor">
+            <h1>Be a smart investor in a few minutes</h1>
+            <p>So strongly and metaphysically did I conceive of my situation then, that while earnestly watching his motions, I seemed distinctly to perceive that my own individuality was now merged in a joint stock </p>
+        </section>
     </div>
   </body>
 </html>
