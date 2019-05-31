@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title></title>
     <style type="text/css">
-
         /* Start Global */
-
         @font-face {
             font-family: 'ArialMT';
             src: url(ArialMT.woff);
@@ -17,11 +15,6 @@
             font-family: 'ArialBoldMT';
             src: url(Arial-BoldMT.woff);
         } 
-
-        /* *, ::after, ::before {
-            box-sizing: border-box;
-        } */
-
         .btn {
             border: none;
             border-radius: 4px;
@@ -40,30 +33,19 @@
         .btn:hover {
             background-color: #10cfbd;
         }
-
         /* End Global */
 
         body {
             background-color: gray;
+            margin: 0;
+            padding: 0px;
         }
 
-        /* @media (max-width: 320px) {
-            body { 
-                margin: 0;
-                width: 100%;
-            }
-        } */
         .main-container {
             max-width: 600px;
             margin: auto;
             background: #ffffff;
         }
-
-        /* @media (max-width: 320px) {
-            .main-container {
-                max-width: 320px;
-            }
-        } */
 
         .header {
             height: 57px;
@@ -71,13 +53,6 @@
             align-items: center;
             width: 100%;
         }
-
-        /* @media (max-width: 320px) {
-            .header {
-                max-width: 320px;
-                width: 320px;
-            }
-        } */
 
         .header img {
             width: 110px;
@@ -91,6 +66,12 @@
             font-size: 8px;
             line-height: 9px;
             margin-left: auto;
+        }
+
+        @media (max-width: 321px) {  
+            .header p {
+                display: none;
+            }
         }
         .header p > a {
             color: #2C2C2C;
@@ -127,6 +108,13 @@
             margin-bottom: 0;
             padding-top: 58px;
         }
+
+        @media (max-width: 321px) { 
+            .be-a-smart-investor h1 {
+                padding-top: 60px;
+            }
+        }
+        
         .be-a-smart-investor p {
             font-family: ArialMT;
             font-size: 12px;
@@ -138,6 +126,14 @@
             margin-left: 95px;
             margin-right: 95px;
         }
+
+        @media (max-width: 321px) {  
+            .be-a-smart-investor p {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+        }
+
         .be-a-smart-investor button {
             font-family: ArialMT;
             font-size: 16px;
@@ -153,16 +149,13 @@
            
         }
 
-        /* @media (max-width: 320px) { 
-            .create-account {
-                width: 320px;
-            }
-        } */
         .create-account .container-top {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
+        
         .create-account .container-top > img {
             width: 466px;
             height: 268px;
@@ -170,12 +163,13 @@
             top: -130px;
         }
 
-        /* @media (max-width: 320px) { 
+        @media (max-width: 321px) { 
             .create-account .container-top > img {
                 width: 303px;
                 height: 174px;
+                top: -85px;
             }
-        } */
+        }
        
         .create-account .container-middle {
             display: flex;
@@ -185,6 +179,48 @@
             margin-right: 40px;
             margin-top: -140px;
         }
+
+        @media (min-width: 322px) {
+            .container-middle-mobile {
+                display: none;
+            }
+        }
+
+        @media (max-width: 321px) {
+            .create-account  .container-middle {
+                display: none;
+            }
+            .container-middle-mobile {
+                display: inherit;
+                margin-left: 35px;
+                margin-right: 35px;
+                margin-top: 0px;
+            }
+            .container-middle-mobile img {
+                width: 250px;
+                height: 191px;
+                margin-bottom: 10px;
+            }
+
+            .container-middle-mobile h2 {
+                font-family: ArialMT;
+                color: #2C2C2C;
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+            .container-middle-mobile p {
+                font-family: ArialMT;
+                color:  #626262;
+                font-size: 11px;
+                line-height: 17px;
+                margin-bottom: 45px;
+            }
+            
+        }
+
+        
+
         .create-account .container-middle table tbody tr td img {
             width: 250px;
             height: 191px;
@@ -221,6 +257,13 @@
             text-align: center;
             height: 195px;
         }
+
+        @media (max-width: 321px) {
+            .join-hundreds {
+                height: 251px;
+            }
+        }
+
         .join-hundreds h2 {
             font-family: ArialMT;
             color: #FFFFFF;
@@ -229,6 +272,14 @@
             padding-top: 31px;
             margin-bottom: 0px;
         }
+
+        @media (max-width: 321px) {
+            .join-hundreds h2 {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
         .join-hundreds p {
             font-family: ArialMT;
             color: #FFFFFF;
@@ -237,6 +288,14 @@
             padding-left: 81px;
             padding-right: 81px;
         }
+
+        @media (max-width: 321px) {
+            .join-hundreds p {
+                padding-left: 26px;
+                padding-right: 26px;
+            }
+        }
+
         .join-hundreds button {
             font-family: ArialMT;
             font-size: 16px;
@@ -248,10 +307,25 @@
             height: 41px;
         }
 
+        @media (max-width: 321px) {
+            .join-hundreds button {
+                margin-top: 10px;
+            }
+        }
+
+
         .the-partbnb-team {
             height: 185px;
             margin-left: 45px;
             margin-right: 45px;
+        }
+
+        @media (max-width: 321px) {
+            .the-partbnb-team {
+                height: 255px;
+                margin-left: 32px;
+                margin-right: 32px;
+            }
         }
         .the-partbnb-team h2 {
             font-family: ArialMT;
@@ -261,6 +335,14 @@
             text-align: center;
             padding-top: 38px;
         }
+
+        @media (max-width: 321px) {
+            .the-partbnb-team h2 {
+                padding-top: 30px;
+            }
+        }
+        
+
         .the-partbnb-team p {
             font-family: ArialMT;
             font-size: 9px;
@@ -276,14 +358,28 @@
             border-color: #909090;
             border-width: 0.33px;
         }
-        
+
+        @media (max-width: 320px) {
+            .the-partbnb-team hr {
+                border-color: #909090;
+                border-width:  0.35px
+            }
+        }
+
         .footer {
             height: 63px;
             display: flex;
             align-items: center;
-            width: 100%;
-            padding-left: 45px;
-            padding-right: 45px;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+
+
+        @media (max-width: 321px) { 
+            .footer {
+                display: block;
+                text-align: center;
+            }
         }
         .footer p { 
             font-family: ArialMT;
@@ -348,9 +444,26 @@
                    </tbody>
                </table>
             </div>
+            <div class="container-middle-mobile">
+                <img src="1.png" />
+                <div class="desc">
+                    <h2>Choose a Property</h2>
+                    <p>Buy 1 part or buy 1,000 parts from less than $50 from the list of our available properties!</p>
+                </div>
+                <img src="2.png" />
+                <div class="desc">
+                    <h2>Earn Rental Income</h2>
+                    <p>Every night a guest stays generates revenue. You get your share!</p>
+                </div>
+                <img src="3.png" />
+                <div class="desc">
+                    <h2>Watch it grow or sell</h2>
+                    <p>Buy 1 part or buy 1,000 parts from less than $50 from the list of our available properties!</p>
+                </div>
+            </div>
         </section>
         <section class="join-hundreds">
-            <h2>Join hundreds of Parrtbnb Investors</h2>
+            <h2>Join hundreds of Partbnb Investors</h2>
             <p>Kogi Cosby sweater ethical squid irony disrupt, organic tote bag gluten-free XOXO wolf typewriter mixtape small batch. DIY pickled four loko McSweeney's, </p>
             <button class="btn">Invest now</button>
         </section>
