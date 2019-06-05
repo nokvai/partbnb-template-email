@@ -16,7 +16,7 @@
         .footer-sm {
             display: none;
         }
-        .banner tr {
+        .banner tr td {
             background: url('https://staging.partbnb.com/emailtemplates/2_email_graphics@2x.jpg');
         }
         .spacer {
@@ -25,12 +25,14 @@
 
         @media only screen and (max-width: 576px) {
 
-            .banner tr {
-              background: url('https://staging.partbnb.com/emailtemplates/2_email_graphics@2x_sm.jpg');
+            .banner tr td {
+              background: url('https://staging.partbnb.com/emailtemplates/2_email_graphics@2x_sm.jpg')!important;
               height: 463px!important;
               text-align: center!important;
+              background-size: 600px 344px!important;
+              background-size: cover!important;
+              background-position: center!important;
             }
-
             .banner tr td {
               padding-left: 12%!important;
               padding-right: 12%!important;
@@ -38,18 +40,15 @@
             .spacer {
               display: inherit;
             }
-
             .footer-lg {
                 display: none!important;
             }
             .footer-sm {
                 display: inherit!important;
             }
-            
             .banner tr td button {
                 margin-bottom: 230px!important;
             }
-            
         } 
         @media only screen and (max-width: 471px) {
             /* .image-1 {
@@ -100,17 +99,16 @@
                                 border-top-right-radius: 4px;
                                 text-align: left;
                                 color: #ffffff;
-                                background-size: 600px 344px;
-                                background-size: cover;
-                                background-position: center;"
+                                "
                                 cellpadding="0"
                                 cellspacing="0">
                             <tbody>
-                                <tr style="
-                                    background-size: 600px 344px;
-                                    background-size: cover;
-                                    background-position: center;">
-                                    <td style="padding-left: 40px; padding-right: 45%;">
+                                <tr>
+                                    <td style="padding-left: 40px; padding-right: 45%;
+                                        background: url('https://staging.partbnb.com/emailtemplates/2_email_graphics@2x.jpg');
+                                        background-size: 600px 344px;
+                                        background-size: cover;
+                                        background-position: center;">
                                         <h1 style="font-size:25px;
                                             line-height: 30px;">Diversify your Portfolio</h1>
                                         <p style="font-size:12px;
